@@ -1,0 +1,56 @@
+.box {
+    background: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.box p {
+    margin: 0.5rem 0;
+}
+
+.cta {
+    background-image: url("./images/TE19.jpg");
+    background-size: cover;
+    background-position-y: -1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    color: #FFF;
+    overflow: hidden;
+}
+
+.cta .cta-inner {
+    background: rgb(207,0,210);
+    background: linear-gradient(90deg, rgba(207,0,210,0.7) 4%, rgba(9,85,121,0.7) 50%, rgba(0,212,255,0.7) 93%);
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+}
+
+.cta h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+}
+
+.cta-content {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.cta button {
+    padding: 0.45rem 2rem;
+    color: #fff;
+    transition: background 0.5s ease;
+    background: #cf00d2;
+    border: 0;
+    border-radius: 4px;
+    margin: 1rem 0.25rem;
+}
+
+.cta button:hover {
+    background: #028fac;
+    cursor: pointer;
+}

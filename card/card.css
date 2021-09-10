@@ -1,0 +1,49 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-height: 50vh;
+    grid-gap: 1rem;
+}
+
+.cards .card {
+    background: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+}
+
+.card .thumbnail {
+    background-image: url("../cta/images/TE19.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    display: block;
+}
+
+.thumbnail-overlay {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.first-card .thumbnail-overlay {
+    background: linear-gradient(90deg, rgba(207,0,210,0.4) 34%, rgba(9,85,121,0.4) 81%, rgba(0,212,255,0.4) 100%);
+}
+
+.thumbnail-overlay {
+    background: rgba(0,212,255,0.3);
+}
+
+.card .content {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        grid-template-columns: auto;
+    }
+
+    .cards .card .thumbnail {
+        display: none;
+    }
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+
+*,*:before,*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.grad-text {
+    background: linear-gradient(90deg, rgba(207,0,210,1) 4%, rgba(9,85,121,1) 50%, rgba(0,212,255,1) 93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.65rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+.link-text:after {
+    content: " \1F816";
+}
+
+.heading-text {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.navbar {
+    min-height: 3rem;
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+}
+
+.navbar a {
+    color: rgb(122, 122, 122);
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+
+.navbar-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 24rem) {
+    .navbar-inner, .nav {
+        flex-direction: column;
+    }
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+.nav-item {
+    padding-left: 1rem;
+}
+.nav-link {
+    text-decoration: none;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
